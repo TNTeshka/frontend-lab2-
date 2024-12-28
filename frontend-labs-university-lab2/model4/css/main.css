@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: #ccc 1px solid;
+}
+
+.header__logo {
+  font-size: 32px;
+  font-weight: bold;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  color: #00256f;
+  gap: 10px;
+  font-size: 36px;
+
+  font-weight: 700;
+  transition: all 0.25s ease-in-out;
+}
+.logo svg {
+  fill: #d7c718;
+  width: 44px;
+  margin: -2px -8px 0 4px;
+}
+.logo:hover {
+  opacity: 0.8;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.posts {
+  padding-block: 10px;
+  width: 80%;
+}
+
+.sidebar {
+  width: 20%;
+}
+
+.posts__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.post__image {
+  float: left;
+  width: 30%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.post__image--more {
+  display: flex;
+  float: left;
+  width: 30%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.post__image--more img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  float: right;
+  width: 70%;
+  padding: 0 20px;
+}
+
+.post__author {
+  font-size: 14px;
+  color: #333;
+}
+
+.post__title {
+  padding-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.post__description {
+  font-size: 16px;
+  color: #333;
+}
+
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.catalog__title {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+.catalog__description {
+  font-size: 14px;
+}
+.sidebar {
+  padding: 10px 20px;
+  border-left: #ccc 1px solid;
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .posts {
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-top: #ccc 1px solid;
+    border-left: none;
+  }
+
+  .post__image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .post__image--more {
+    width: 100%;
+    height: 200px;
+  }
+
+  .post__content {
+    width: 100%;
+  }
+}
